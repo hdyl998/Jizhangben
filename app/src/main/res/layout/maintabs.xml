@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include layout="@layout/title_view" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- FramLayout TabWidget是系统默认的 -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/mainbar_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/foot_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+             <RadioButton
+                android:id="@+id/radio_jiyiji"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/foot_01"             
+                android:button="@null"
+                android:checked="true"
+         
+                />
+
+            <RadioButton
+                android:id="@+id/radio_chayicha"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/foot_02"             
+                android:button="@null"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_suanyisuan"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/foot_03"
+                android:button="@null"
+                 />
+
+            <RadioButton
+                android:id="@+id/radio_wode"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/foot_04"
+                android:button="@null"
+                 />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

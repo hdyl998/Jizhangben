@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include 
+        layout="@layout/title_view"
+        />
+    
+    <ImageView 
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_margin="10dip"
+        android:layout_gravity="center"
+        
+        android:background="@drawable/btn_clean"
+        />
+    
+      <ImageView 
+        android:id="@+id/btn_help1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_margin="10dip"
+        android:layout_gravity="center"
+        
+        android:background="@drawable/btn_help2"
+        />
+      
+        <ImageView 
+        android:id="@+id/btn_shared1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_margin="10dip"
+        android:layout_gravity="center"
+        
+        android:background="@drawable/btn_share1"
+        />
+    
+
+</LinearLayout>

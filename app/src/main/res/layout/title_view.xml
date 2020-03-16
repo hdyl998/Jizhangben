@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/frame_remark" >
+<!-- 标题的左按钮 -->
+
+        <ImageView
+            android:id="@+id/iv_titleleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_centerVertical="true"      
+            android:visibility="invisible"            
+            android:scaleType="fitXY" />
+        
+           <ImageView
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_centerVertical="true"   
+            android:visibility="invisible"      
+            android:background="@drawable/btn_more"
+            android:textSize="20sp"
+             />
+
+    <!-- 中间标题 -->
+    <TextView  
+        android:id="@+id/tv_titleview_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:text="标题"
+        android:textColor="#ff5a5a5a"
+        android:textSize="20.0sp"
+        android:visibility="invisible"
+        />
+    <ImageView 
+        android:id="@+id/iv_titleview_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+        
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        />
+    
+    <ImageView 
+        android:id="@+id/btn_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"       
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:background="@drawable/btn_help1"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>

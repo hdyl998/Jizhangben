@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <include
+        android:id="@+id/in_title"
+        layout="@layout/title_view" />
+    <RelativeLayout 
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/in_title"
+        >
+        <!-- 总资产 -->
+            <LinearLayout
+                android:id="@+id/ll_zongzichan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+             
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="总资产" />
+
+                <TextView
+                    android:id="@+id/tv_zongzichan"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="50000" />
+            </LinearLayout>
+        
+            
+             <!-- 现金 -->
+            <LinearLayout
+                android:id="@+id/ll_xianjin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/ll_zongzichan"  
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="现金" />
+
+                <TextView
+                    android:id="@+id/tv_xianjin"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="50000" />
+            </LinearLayout>
+            
+            
+             <!-- 储蓄卡 -->
+            <LinearLayout
+                android:id="@+id/ll_gongshangka"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/ll_xianjin"  
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="储蓄卡" />
+
+                <TextView
+                    android:id="@+id/tv_gongshangka"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="50000" />
+                         
+            </LinearLayout>
+            
+            
+             <!-- 其他 -->
+            <LinearLayout
+                android:id="@+id/ll_yikatong"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/ll_gongshangka"  
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="其他" />
+
+                <TextView
+                    android:id="@+id/tv_yikatong"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="50000" />
+                         
+            </LinearLayout>
+            
+            
+                         <!-- 交通卡 -->
+            <LinearLayout
+                android:id="@+id/ll_jiaotongka"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/ll_yikatong"  
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="交通卡" />
+
+                <TextView
+                    android:id="@+id/tv_jiaotongka"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="50000" />                        
+            </LinearLayout>
+            
+                  
+                         <!-- 借记卡 -->
+            <LinearLayout
+                android:id="@+id/ll_jiejika"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/ll_jiaotongka"  
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="借记卡" />
+
+                <TextView
+                    android:id="@+id/tv_jiejika"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="50000" />                        
+            </LinearLayout>
+            
+                           <!-- 信用卡 -->
+            <LinearLayout
+                android:id="@+id/ll_xinyong"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/ll_jiejika"  
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="信用卡" />
+
+                <TextView
+                    android:id="@+id/tv_xinyong"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="50000" />                        
+            </LinearLayout>
+            
+            
+                            <!-- 支付宝 -->
+            <LinearLayout
+                android:id="@+id/ll_zhifubao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/ll_xinyong"  
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="支付宝" />
+
+                <TextView
+                    android:id="@+id/tv_zhifubao"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="50000" />                        
+            </LinearLayout>
+            
+                                    <!-- 财付通 -->
+            <LinearLayout
+                android:id="@+id/ll_caifutong"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@id/ll_zhifubao"  
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="财付通" />
+
+                <TextView
+                    android:id="@+id/tv_caifutong"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:text="50000" />                        
+            </LinearLayout>
+            
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_view" />
+
+    <LinearLayout
+            android:id="@+id/ll_jiyiji_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="31.0dip"
+            android:background="@drawable/tab_out" >
+
+            <Button
+                android:id="@+id/btn_jiyiji_zhichu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="#00000000" />
+            <Button
+                android:id="@+id/btn_jiyiji_shouru"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="#00000000" />             
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <android.support.v4.view.ViewPager  
+       android:id="@+id/jiyiji_vPager"  
+       android:layout_width="fill_parent"  
+       android:layout_height="fill_parent"  
+       android:layout_gravity="center"   
+       android:flipInterval="30"  
+       android:persistentDrawingCache="animation" />  
+    </LinearLayout>
+
+</LinearLayout>

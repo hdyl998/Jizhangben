@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent"
+	android:layout_marginTop="12dp" 
+	android:orientation="vertical"
+	android:background="@color/white">
+	
+   
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="300px" 
+		android:layout_gravity="center_horizontal" 
+		android:padding="20px"
+		>
+		<TableLayout
+		    android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+		>
+		
+		<TableRow
+		    android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+		>
+		<TextView
+		   android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:gravity="center"
+			android:textColor="@color/bubble_dark_background"
+			android:text="年"
+		></TextView>
+		<TextView
+		   android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:gravity="center"
+			android:textColor="@color/bubble_dark_background"
+			android:text="月"
+		></TextView>
+		<TextView
+		   android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:gravity="center"
+			android:textColor="@color/bubble_dark_background"
+			android:text="日"
+		></TextView>
+		<TextView
+		   android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:gravity="center"
+			android:textColor="@color/bubble_dark_background"
+			android:text="时"
+		></TextView>
+		<TextView
+		   android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:gravity="center"
+			android:textColor="@color/bubble_dark_background"
+			android:text="分"
+		></TextView>
+		</TableRow>
+		<TableRow
+		    android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+		>
+		 <com.baodian.widget.WheelView
+			android:id="@+id/year" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			/>
+			<com.baodian.widget.WheelView
+			android:id="@+id/month" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			/>
+			<com.baodian.widget.WheelView
+			android:id="@+id/day" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			/>
+		<com.baodian.widget.WheelView 
+			android:id="@+id/hour" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			/>
+			<com.baodian.widget.WheelView 
+			android:id="@+id/mins" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			/>
+		</TableRow>
+		</TableLayout>
+	     
+			
+			
+ </LinearLayout>
+
+  <LinearLayout android:orientation="horizontal" 
+  android:layout_width="fill_parent" 
+  android:padding="50px"
+  android:layout_height="wrap_content">
+      <Button 
+      android:id="@+id/button1" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:text="提     交" 
+      android:layout_weight="1">
+      </Button>
+      <Button 
+      android:id="@+id/button2" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:text="取消" 
+      android:layout_weight="1"></Button>
+  </LinearLayout>
+
+</LinearLayout>
